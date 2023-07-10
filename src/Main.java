@@ -1,8 +1,11 @@
 public class Main {
     public static void main(String[] args) {
+
+        //SALARIED EMPLOYEE
         SalariedEmployee salariedEmployee=new SalariedEmployee("Huzair", 1000000.0);
         salariedEmployee.salariedEmployeeMethod();
 
+        //HOURLY EMPLOYEE
         HourlyEmployee hourlyEmployee=new HourlyEmployee("Shree",100.0,180.0);
         hourlyEmployee.hourlyEmployeeMethod();
     }
@@ -24,6 +27,7 @@ class SalariedEmployee extends Calculate{
     String name;
     Double salary;
 
+    //Salaried workers constructor
     public SalariedEmployee(String name, Double salary) {
         this.name = name;
         this.salary = salary;
@@ -39,6 +43,7 @@ class HourlyEmployee extends Calculate{
     Double hourlyLate;
     Double hourlyWorked;
 
+    //Hourly Employee Constructor
     public HourlyEmployee(String name, Double hourlyLate, Double hourlyWorked) {
         this.name = name;
         this.hourlyLate = hourlyLate;
